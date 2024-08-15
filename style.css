@@ -46,7 +46,8 @@ body {
 }
 
 .btn {
-  background-color: #800080c7;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffb6c1),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 50 L20 60 L40 50 L60 60 L80 50 L100 60' stroke='%23ff69b4' stroke-width='2' fill='none'/%3E%3C/svg%3E");
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -59,7 +60,6 @@ body {
 }
 
 .btn:hover {
-  background-color: #660066c7;
   transition: transform 1.3s;
   animation: shake 0.5s;
 }
@@ -119,13 +119,18 @@ body {
   font-size: 34px;
 }
 .socials-div i:hover {
-  color: #660066c7;
+  background: linear-gradient(to bottom, #ff69b4, #ffb6c1);
   transform: scale(1.1);
   transition: transform 0.3s;
+  border-radius: 25%;
 }
 
 i {
   color: #000;
+}
+
+i:hover {
+  color: white;
 }
 
 .about-me-text {
@@ -138,4 +143,62 @@ i {
 .about-me-text:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: auto;
+  position: relative;
+  bottom: 60%;
+  left: 50%;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .upper-div {
+  background-color: #444;
+}
+
+.dark-mode .middle-div {
+  background-color: #555;
+}
+
+.dark-mode .lower-div {
+  background-color: #555;
+  border-bottom-left-radius: calc(0.05 * 510px);
+  border-bottom-right-radius: calc(0.05 * 510px);
+}
+
+.dark-mode .btn {
+  background-color: #777;
+  color: #fff;
+}
+
+.dark-mode .btn:hover {
+  background-image: linear-gradient(to bottom, #ff69b4, #ffb6c1),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 50 L20 60 L40 50 L60 60 L80 50 L100 60' stroke='%23ff69b4' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+}
+
+.dark-mode .content {
+  border-radius: calc(0.05 * 510px) calc(0.05 * 755px);
+}
+
+.dark-mode .name-div span {
+  color: #d7d7d7;
+}
+
+.dark-mode .socials-div i {
+  color: #fff;
+}
+
+.dark-mode .socials-div i:hover {
+  background: linear-gradient(to bottom, #ff69b4, #ffb6c1);
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
