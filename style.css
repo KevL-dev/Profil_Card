@@ -9,7 +9,7 @@ body {
   height: 755px;
   display: grid;
   background: #ffffff;
-  border-radius: 5%;
+  border-radius: calc(0.05 * 510px) calc(0.05 * 755px);
   -webkit-box-shadow: 0px 0px 15px 5px rgba(107, 107, 107, 0.5);
   box-shadow: 0px 0px 15px 5px rgba(107, 107, 107, 0.5);
   margin: 5% auto;
@@ -36,12 +36,13 @@ body {
   background-image: linear-gradient(to bottom, #ff69b4, #ffb6c1);
   background-size: 100% 300px;
   background-position: 0% 100%;
-  border-radius: 5px 5px 0 0;
   padding: 20px;
   background-image: linear-gradient(to bottom, #ff69b4, #ffb6c1),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 50 L20 60 L40 50 L60 60 L80 50 L100 60' stroke='%23ff69b4' stroke-width='2' fill='none'/%3E%3C/svg%3E");
   background-size: 100% 300px, 100% 100px;
   background-position: 0% 100%, 0% 50%;
+  border-top-left-radius: calc(0.05 * 510px);
+  border-top-right-radius: calc(0.05 * 510px);
 }
 
 .btn {
